@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<BrowserRouter>
 		<React.StrictMode>
-			<App function={getUser} />
+			<App function={{key_getUser:getUser, key_getUsers:getUsers}} />
 		</React.StrictMode>
 	</BrowserRouter>
 );
